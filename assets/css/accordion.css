@@ -1,0 +1,85 @@
+.styble-accordion .accordion-item {
+    /* background-color: #fff; */
+    /* border: 1px solid rgba(0, 0, 0, 0.125); */
+    margin-top: 0;
+    margin-bottom: 0px;
+    /* border-radius: 0.25rem; */
+}
+.styble-accordion .accordion-button {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    font-size: 1rem;
+    color: #212529;
+    text-align: left;
+    background-color: #fff;
+    border: 0;
+    border-radius: 0;
+    overflow-anchor: none;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+}
+.styble-accordion button.accordion-button {
+    padding: 15px 20px;
+    border: none;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #e7e5e5;
+}
+.styble-accordion .accordion-button p {
+    margin: 0;
+}
+@media (prefers-reduced-motion: reduce) {
+    .styble-accordion .accordion-button {
+      transition: none;
+    }
+}
+.styble-accordion .accordion-button:hover {
+    z-index: 2;
+}
+.styble-accordion .accordion-button:focus {
+    z-index: 3;
+    border-color: #86b7fe;
+    outline: 0;
+}
+  
+.styble-accordion .accordion-header {
+    margin-bottom: 0;
+    margin-top: 0;
+    background-color: transparent;
+}
+
+.styble-accordion .accordion-header .accordion-button{
+    cursor: pointer;
+}
+
+.styble-accordion .accordion-body {
+    padding: 15px 20px;
+}
+  
+.styble-accordion .collapse:not(.show) {
+    height: 0;
+}
+  
+.styble-accordion .collapsing {
+    height: 0;
+    overflow: hidden;
+    transition: height 0.35s ease;
+}
+@media (prefers-reduced-motion: reduce) {
+    .styble-accordion .collapsing {
+        transition: none;
+    }
+}
+
+.styble-accordion .accordion-button.collapsed .styble-expand,
+.styble-accordion .accordion-button .styble-collapse{
+    display: none;
+}
+
+.styble-accordion .accordion-button:not(.collapsed) .styble-expand,
+.styble-accordion .accordion-button.collapsed .styble-collapse {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

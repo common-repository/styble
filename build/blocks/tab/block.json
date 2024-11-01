@@ -1,0 +1,36 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "styble/tab",
+  "version": "1.0.1",
+  "title": "Tab Item",
+  "category": "styble",
+  "icon": "button",
+  "description": "Tab Item.",
+  "parent": [
+    "styble/tabs"
+  ],
+  "supports": {
+    "html": false,
+    "customClassName": false,
+    "anchor": false
+  },
+  "attributes": {
+    "uniqueId": {
+      "type": "string"
+    },
+    "parentId": {
+      "type": "string"
+    },
+    "id": {
+      "type": "number"
+    },
+    "tabActive": {
+      "type": "string"
+    }
+  },
+  "textdomain": "styble",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css"
+}

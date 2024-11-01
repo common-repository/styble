@@ -1,0 +1,148 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "styble/buttons",
+  "version": "1.0.1",
+  "title": "Buttons",
+  "category": "styble",
+  "icon": "button",
+  "description": "Add multiple buttons and stylize in your way.",
+  "supports": {
+    "html": false,
+    "customClassName": false,
+    "anchor": false
+  },
+  "attributes": {
+    "uniqueId": {
+      "type": "string",
+      "default": ""
+    },
+    "dynamicCss": {
+      "type": "string",
+      "default": ""
+    },
+    "fontList": {
+      "type": "string"
+    },
+    "openTab": {
+      "type": "string",
+      "default": "general"
+    },
+    "buttonsItemGap": {
+      "type": "object",
+      "default": {
+        "device": {
+          "Desktop": 12,
+          "Tablet": "",
+          "Mobile": ""
+        },
+        "unit": {
+          "Desktop": "px",
+          "Tablet": "px",
+          "Mobile": "px"
+        }
+      }
+    },
+    "buttonAlignment": {
+      "type": "object",
+      "default": {
+        "device": {
+          "Desktop": "left",
+          "Tablet": "",
+          "Mobile": ""
+        }
+      }
+    },
+    "padding": {
+      "type": "object",
+      "default": {
+        "device": {
+          "Desktop": {
+            "top": "0",
+            "right": "0",
+            "bottom": "0",
+            "left": "0"
+          },
+          "Tablet": {
+            "top": "",
+            "right": "",
+            "bottom": "",
+            "left": ""
+          },
+          "Mobile": {
+            "top": "",
+            "right": "",
+            "bottom": "",
+            "left": ""
+          }
+        },
+        "unit": {
+          "Desktop": "px",
+          "Tablet": "px",
+          "Mobile": "px"
+        },
+        "allChange": false
+      }
+    },
+    "margin": {
+      "type": "object",
+      "default": {
+        "device": {
+          "Desktop": {
+            "top": "0",
+            "right": "0",
+            "bottom": "0",
+            "left": "0"
+          },
+          "Tablet": {
+            "top": "",
+            "right": "",
+            "bottom": "",
+            "left": ""
+          },
+          "Mobile": {
+            "top": "",
+            "right": "",
+            "bottom": "",
+            "left": ""
+          }
+        },
+        "unit": {
+          "Desktop": "px",
+          "Tablet": "px",
+          "Mobile": "px"
+        },
+        "allChange": false
+      }
+    },
+    "buttonsHideOnDesktop": {
+      "type": "boolean",
+      "default": false
+    },
+    "buttonsHideOnTablet": {
+      "type": "boolean",
+      "default": false
+    },
+    "buttonsHideOnMobile": {
+      "type": "boolean",
+      "default": false
+    },
+    "additionalClass": {
+      "type": "string",
+      "default": ""
+    },
+    "isPreview": {
+      "type": "boolean",
+      "default": false
+    }
+  },
+  "example": {
+    "attributes": {
+      "isPreview": true
+    }
+  },
+  "textdomain": "styble",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css"
+}

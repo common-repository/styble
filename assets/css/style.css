@@ -1,0 +1,315 @@
+*:not(p), :before, :after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-style: normal;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Width */
+.styble-full-width{
+    width: 100%;
+}
+
+/* Margin top */
+.styble-mt-5{
+    margin-top: 5px;
+}
+.styble-mt-10{
+    margin-top: 10px;
+}
+.styble-mt-20{
+    margin-top: 20px;
+}
+.styble-m-r-auto{
+    margin-right: auto;
+}
+.styble-ml-auto{
+    margin-left: auto !important;
+}
+
+/* Margin right */
+.styble-mr-10{
+    margin-right: 10px;
+}
+
+/* Margin bottom */
+.styble-mb-5{
+    margin-bottom: 5px;
+}
+
+/* display */
+.styble-hidden {
+    display: none;
+}
+.styble-d-flex {
+    display: flex;
+}
+.styble-d-i-flex {
+    display: inline-flex;
+}
+.styble-d-block {
+    display: block !important;
+}
+.styble-d-i-block {
+    display: inline-block;
+}
+.styble-justify-right {
+    justify-content: end;
+}
+.styble-justify-left {
+    justify-content: left;
+}
+.styble-justify-center {
+    justify-content: center;
+}
+.styble-align-i-center {
+    align-items: center;
+}
+.styble-align-i-start {
+    align-items: flex-start;
+}
+.styble-align-i-end {
+    align-items: end;
+}
+.styble-row-reverse {
+    flex-direction: row-reverse;
+}
+
+/* Text Align */
+.styble-text-align-center {
+    text-align: center;
+}
+.styble-text-align-left {
+    text-align: left;
+}
+.styble-text-align-right {
+    text-align: right;
+}
+
+/* Border style */
+.styble-border-solid {
+    border-style: solid;
+}
+.styble-border-double {
+    border-style: double;
+}
+.styble-border-double {
+    border-style: double;
+}
+.styble-border-dotted {
+    border-style: dotted;
+}
+.styble-border-dashed {
+    border-style: dashed;
+}
+.styble-border-groove {
+    border-style: groove;
+}
+.styble-border-inset {
+    border-style: inset;
+}
+.styble-border-outset {
+    border-style: outset;
+}
+.styble-border-ridge {
+    border-style: ridge;
+}
+
+/* Font weight */
+.styble-font-300 {
+    font-weight: 300 !important;
+}
+.styble-font-400 {
+    font-weight: 400 !important;
+}
+.styble-font-500 {
+    font-weight: 500 !important;
+}
+.styble-font-600 {
+    font-weight: 600 !important;
+}
+.styble-font-700 {
+    font-weight: 700 !important;
+}
+.styble-font-800 {
+    font-weight: 800 !important;
+}
+.styble-font-900 {
+    font-weight: 900 !important;
+}
+
+/* Font style */
+.styble-font-normal {
+    font-style: normal;
+}
+.styble-font-italic {
+    font-style: italic;
+}
+.styble-font-oblique {
+    font-style: oblique;
+}
+
+/* Text transform */
+.styble-text-t-normal {
+    text-transform: none !important;
+}
+.styble-text-t-lowercase {
+    text-transform: lowercase !important;
+}
+.styble-text-t-capitalize {
+    text-transform: capitalize !important;
+}
+.styble-text-t-uppercase {
+    text-transform: uppercase !important;
+}
+
+/* Text decoration */
+.styble-text-d-none {
+    text-decoration: none !important;
+}
+.styble-text-d-overline {
+    text-decoration: overline !important;
+}
+.styble-text-d-line-through {
+    text-decoration: line-through !important;
+}
+.styble-text-d-underline {
+    text-decoration: underline !important;
+}
+.styble-text-d-underline-overline {
+    text-decoration: underline overline !important;
+}
+
+@media only screen and (max-width: 780px) {
+    .styble-hidden-tablet {
+        display: none;
+    }
+    /* Text Align */
+    .styble-tablet-text-align-center {
+        text-align: center;
+    }
+    .styble-tablet-text-align-left {
+        text-align: left;
+    }
+    .styble-tablet-text-align-right {
+        text-align: right;
+    }
+}
+@media only screen and (max-width: 360px) {
+    .styble-hidden-mobile {
+        display: none;
+    }
+    /* Text Align */
+    .styble-mobile-text-align-center {
+        text-align: center;
+    }
+    .styble-mobile-text-align-left {
+        text-align: left;
+    }
+    .styble-mobile-text-align-right {
+        text-align: right;
+    }
+    
+}
+
+/* Styble post grid css */
+.styble-post-grid .styble-post-pagination a,
+.styble-post-grid .styble-post-read-more,
+.styble-post-grid .styble-post-item,
+.styble-post-grid .styble-post-meta a,
+.styble-post-grid .styble-post-title a{
+    transition: .3s;
+}
+.styble-post-grid .styble-post-title {
+    font-size: 20px;
+    color: #2c2d2f;
+}
+.styble-post-grid .styble-post-item {
+    overflow: hidden;
+}
+.styble-post-grid .styble-post-title a{
+    display: inline-block;
+}
+
+.styble-post-grid .styble-post-meta {
+    font-size: 12px;
+    color: #a09a9a;
+    margin-top: 6px;
+}
+
+.styble-post-grid .styble-post-cat {
+    display: inline-block;
+}
+.styble-post-grid .styble-post-content {
+    font-size: 14px;
+    color: #888888;
+}
+.styble-post-grid .styble-post-content p {
+    margin: 0;
+}
+.styble-post-grid .styble-post-read-more {
+    text-decoration: none;
+    padding: 7px 12px;
+    color: #707070;
+    border: 1px solid #707070;
+    border-radius: 4px;
+    display: inline-block;
+}
+.styble-post-grid .styble-post-pagination a {
+    padding: 8px 20px;
+    display: inline-block;
+    border: 1px solid #8888;
+    text-decoration: none;
+}
+.styble-post-grid .styble-post-pagination .current{
+    color: #cccccc;
+    cursor: default;
+}
+.styble-post-grid .styble-post-pagination .dots{
+    opacity: .8;
+    pointer-events: none;
+}
+
+.editor-styles-wrapper > .wp-block[data-type^="styble/"] {
+    margin-left: unset;
+    margin-right: unset;
+}
+
+.editor-styles-wrapper .block-editor-block-list__layout.is-root-container > :where(:not(.alignleft):not(.alignright):not(.alignfull)) {
+    max-width: 900px;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+.styble-video-wrap-overlay{
+    position: relative;
+    overflow: hidden;
+}
+
+.styble-video-wrap-overlay::after{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.styble-video-wrap-overlay .styble-play-icon{
+    display: inline-block;
+    position: absolute;
+    z-index: 9;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

@@ -1,0 +1,160 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "styble/accordion",
+  "version": "1.0.1",
+  "title": "Accordion Item",
+  "category": "styble",
+  "icon": "button",
+  "description": "Add a beautiful Accordion FAQ to your page.",
+  "parent": [
+    "styble/accordions"
+  ],
+  "supports": {
+    "html": false,
+    "customClassName": false,
+    "anchor": false
+  },
+  "attributes": {
+    "uniqueId": {
+      "type": "string"
+    },
+    "uniqueIdChild": {
+      "type": "string",
+      "default": ""
+    },
+    "dynamicCss": {
+      "type": "string"
+    },
+    "parentId": {
+      "type": "string"
+    },
+    "isdParentSelected": {
+      "type": "string"
+    },
+    "titleText": {
+      "type": "string",
+      "selector": "span",
+      "default": ""
+    },
+    "accordionTransition": {
+      "type": "object",
+      "default": {
+        "value": 0.3
+      }
+    },
+    "titleTag": {
+      "type": "string",
+      "default": ""
+    },
+    "expandIcon": {
+      "type": "string",
+      "default": ""
+    },
+    "collapseIcon": {
+      "type": "string",
+      "default": ""
+    },
+    "titleIcon": {
+      "type": "string",
+      "default": ""
+    },
+    "titleIconType": {
+      "type": "string",
+      "default": ""
+    },
+    "titleImage": {
+      "type": "object",
+      "default": ""
+    },
+    "titleImageType": {
+      "type": "string",
+      "default": ""
+    },
+    "titleImageExternal": {
+      "type": "string",
+      "default": ""
+    },
+    "titleImageAlt": {
+      "type": "string",
+      "default": ""
+    },
+    "childTitleIconType": {
+      "type": "string",
+      "default": ""
+    },
+    "childTitleImage": {
+      "type": "object",
+      "default": ""
+    },
+    "childTitleImageType": {
+      "type": "string",
+      "default": ""
+    },
+    "childTitleImageExternal": {
+      "type": "string",
+      "default": ""
+    },
+    "childTitleImageAlt": {
+      "type": "string",
+      "default": ""
+    },
+    "childTitleIcon": {
+      "type": "string",
+      "default": ""
+    },
+    "defaultOpen": {
+      "type": "boolean",
+      "default": false
+    },
+    "enableIcon": {
+      "type": "boolean",
+      "default": true
+    },
+    "enableTitleIcon": {
+      "type": "boolean",
+      "default": false
+    },
+    "iconPosition": {
+      "type": "string",
+      "default": "left"
+    },
+    "titleIconPosition": {
+      "type": "string",
+      "default": "beforeTitle"
+    },
+    "accordionHideOnDesktop": {
+      "type": "boolean",
+      "default": false
+    },
+    "accordionHideOnTablet": {
+      "type": "boolean",
+      "default": false
+    },
+    "accordionHideOnMobile": {
+      "type": "boolean",
+      "default": false
+    },
+    "parentUniqueId": {
+      "type": "string",
+      "default": ""
+    },
+    "additionalClass": {
+      "type": "string",
+      "default": ""
+    },
+    "isPreview": {
+      "type": "boolean",
+      "default": false
+    }
+  },
+  "example": {
+    "attributes": {
+      "isPreview": true
+    }
+  },
+  "textdomain": "styble",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css"
+}

@@ -1,0 +1,339 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "styble/iconlistchild",
+  "version": "1.0.1",
+  "title": "Icon list Item",
+  "category": "styble",
+  "icon": "editor-ul",
+  "description": "Add a beautiful Icon list item",
+  "parent": [
+    "styble/iconlist"
+  ],
+  "supports": {
+    "html": false,
+    "customClassName": false,
+    "anchor": false
+  },
+  "attributes": {
+    "uniqueId": {
+      "type": "string"
+    },
+    "dynamicCss": {
+      "type": "string"
+    },
+    "childIconType": {
+      "type": "string",
+      "default": "icon"
+    },
+    "fromParentIconType": {
+      "type": "string",
+      "default": "icon"
+    },
+    "fromParentPosition": {
+      "type": "string",
+      "default": "before-text"
+    },
+    "parentId": {
+      "type": "string"
+    },
+    "fromParentChildBorder": {
+      "type": "object"
+    },
+    "fromParentChildBorderWidth": {
+      "type": "object"
+    },
+    "iconListChildRemoveText": {
+      "type": "boolean"
+    },
+    "fromParentChildBorderRadius": {
+      "type": "object"
+    },
+    "childIcon": {
+      "type": "string",
+      "default": "fas fa-check-circle"
+    },
+    "fromParentIcon": {
+      "type": "string",
+      "default": "fas fa-check-circle"
+    },
+    "childImage": {
+      "type": "object",
+      "default": ""
+    },
+    "childImageAlt": {
+      "type": "string",
+      "default": ""
+    },
+    "imageChildUrl": {
+      "type": "string",
+      "default": ""
+    },
+    "fromParentChildImageUrl": {
+      "type": "string",
+      "default": ""
+    },
+    "imageCustomSize": {
+      "type": "object",
+      "default": {
+        "device": {
+          "Desktop": {
+            "top": "",
+            "right": ""
+          },
+          "Tablet": {
+            "top": "",
+            "right": ""
+          },
+          "Mobile": {
+            "top": "",
+            "right": ""
+          }
+        },
+        "unit": {
+          "Desktop": "px",
+          "Tablet": "px",
+          "Mobile": "px"
+        },
+        "allChange": false
+      }
+    },
+    "childImageType": {
+      "type": "string",
+      "default": "local"
+    },
+    "fromParentChildImageType": {
+      "type": "string"
+    },
+    "fromParentChildImageAlt": {
+      "type": "string"
+    },
+    "fromParentChildImage": {
+      "type": "object",
+      "default": ""
+    },
+    "fontList": {
+      "type": "string",
+      "default": ""
+    },
+    "iconListChildText": {
+      "type": "string",
+      "source": "html",
+      "selector": "span",
+      "default": "List item"
+    },
+    "childLink": {
+      "type": "boolean",
+      "default": false
+    },
+    "childLinkText": {
+      "type": "string",
+      "default": "#"
+    },
+    "childLinkTarget": {
+      "type": "boolean",
+      "default": false
+    },
+    "childNoFollow": {
+      "type": "boolean",
+      "default": false
+    },
+    "itemLabelColor": {
+      "type": "object",
+      "default": {
+        "color": "",
+        "hover": ""
+      }
+    },
+    "itemBorderColor": {
+      "type": "object",
+      "default": {
+        "color": "",
+        "hover": ""
+      }
+    },
+    "iconColor": {
+      "type": "object",
+      "default": {
+        "color": "",
+        "hover": ""
+      }
+    },
+    "bgColor": {
+      "type": "object",
+      "default": {
+        "color": {
+          "style": "transparent",
+          "transparent": "",
+          "solidColor": "#fff",
+          "gradient": "linear-gradient(135deg,rgb(6,147,227) 0%,rgb(133,49,213) 100%)"
+        },
+        "hover": {
+          "style": "",
+          "transparent": "",
+          "solidColor": "",
+          "gradient": "linear-gradient(135deg,rgb(6,147,227) 0%,rgb(133,49,213) 100%)"
+        }
+      }
+    },
+    "iconListChildBorder": {
+      "type": "object",
+      "default": {
+        "color": "#444",
+        "style": "none",
+        "hoverColor": "#000"
+      }
+    },
+    "borderWidth": {
+      "type": "object",
+      "default": {
+        "device": {
+          "Desktop": {
+            "top": "0",
+            "right": "0",
+            "bottom": "0",
+            "left": "0"
+          },
+          "Tablet": {
+            "top": "",
+            "right": "",
+            "bottom": "",
+            "left": ""
+          },
+          "Mobile": {
+            "top": "",
+            "right": "",
+            "bottom": "",
+            "left": ""
+          }
+        },
+        "unit": {
+          "Desktop": "px",
+          "Tablet": "px",
+          "Mobile": "px"
+        },
+        "allChange": false
+      }
+    },
+    "borderRadius": {
+      "type": "object",
+      "default": {
+        "device": {
+          "Desktop": {
+            "top": "0",
+            "right": "0",
+            "bottom": "0",
+            "left": "0"
+          },
+          "Tablet": {
+            "top": "",
+            "right": "",
+            "bottom": "",
+            "left": ""
+          },
+          "Mobile": {
+            "top": "",
+            "right": "",
+            "bottom": "",
+            "left": ""
+          }
+        },
+        "unit": {
+          "Desktop": "px",
+          "Tablet": "px",
+          "Mobile": "px"
+        },
+        "allChange": false
+      }
+    },
+    "childItemPadding": {
+      "type": "object",
+      "default": {
+        "device": {
+          "Desktop": {
+            "top": "0",
+            "right": "0",
+            "bottom": "0",
+            "left": "0"
+          },
+          "Tablet": {
+            "top": "",
+            "right": "",
+            "bottom": "",
+            "left": ""
+          },
+          "Mobile": {
+            "top": "",
+            "right": "",
+            "bottom": "",
+            "left": ""
+          }
+        },
+        "unit": {
+          "Desktop": "px",
+          "Tablet": "px",
+          "Mobile": "px"
+        },
+        "allChange": false
+      }
+    },
+    "childItemMargin": {
+      "type": "object",
+      "default": {
+        "device": {
+          "Desktop": {
+            "top": "0",
+            "right": "0",
+            "bottom": "0",
+            "left": "0"
+          },
+          "Tablet": {
+            "top": "",
+            "right": "",
+            "bottom": "",
+            "left": ""
+          },
+          "Mobile": {
+            "top": "",
+            "right": "",
+            "bottom": "",
+            "left": ""
+          }
+        },
+        "unit": {
+          "Desktop": "px",
+          "Tablet": "px",
+          "Mobile": "px"
+        },
+        "allChange": false
+      }
+    },
+    "fromParentEnableIcon": {
+      "type": "boolean",
+      "default": true
+    },
+    "enableChildIcon": {
+      "type": "boolean",
+      "default": false
+    },
+    "additionalClass": {
+      "type": "string",
+      "default": ""
+    },
+    "tabShowHide": {
+      "type": "object",
+      "default": {
+        "textTab": true,
+        "iconTab": false,
+        "bgTab": false,
+        "borderTab": false,
+        "boxShadowTab": false,
+        "spacingTab": false
+      }
+    }
+  },
+  "textdomain": "styble",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css"
+}
